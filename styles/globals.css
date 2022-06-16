@@ -1,12 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+:root {
+  --primary-color-50: #dff3ed;
+  --primary-color-100: #b0e2d1;
+  --primary-color-200: #7ccfb4;
+  --primary-color-300: #44bb96;
+  --primary-color-400: #00ac81;
+  --primary-color-500: #009d6e;
+  --primary-color-700: #007f53;
+  --primary-color-600: #008f62;
+  --primary-color-800: #006f45;
+  --primary-color-900: #00532b;
+  --secondary-color-100: #f2f7f5;
+  --secondary-color-50: #f7fbfa;
+  --secondary-color-200: #edf1ef;
+  --secondary-color-300: #dfe4e2;
+  --secondary-color-400: #bdc1bf;
+  --secondary-color-500: #9ea2a1;
+  --secondary-color-600: #757978;
+  --secondary-color-700: #616563;
+  --secondary-color-800: #424544;
+  --secondary-color-900: #212423;
+}
+
+
 html,
 body {
   padding: 0;
   margin: 0;
   min-height: 100vh;
-  background-color: #212423;
+  font-size: 16px;
+  background-color: var(--secondary-color-900);
   color: whitesmoke;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+#__next {
+  min-height: 100vh;
 }
 
 a {
@@ -16,4 +45,33 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+
+/* Navbar */
+
+.nav_bar {
+  border-bottom: 2px solid var(--secondary-color-800);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10%
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  transition: all 0.3s ease 0s;
+  color: var(--primary-color-400);
 }

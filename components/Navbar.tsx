@@ -2,9 +2,9 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <header className="nav_bar">
+    <header className='nav_bar'>
       <nav>
-        <ul className="nav_links">
+        <ul className='nav_links'>
           <li>
             <Link href='#'>
               <a>Home</a>
